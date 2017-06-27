@@ -20,7 +20,7 @@ public class Message extends ListenerAdapter {
 		
 		
 		// Message au pif quand tag
-		int r = new Random().nextInt(3);		
+		int r = new Random().nextInt(4);		
 		if (event.getMessage().getContent().contains("@WinnieLOurson")) 
 		{
 			switch (r) 
@@ -30,6 +30,8 @@ public class Message extends ListenerAdapter {
 				case 1 : event.getChannel().sendMessage("GET OFF MY YAAAARD !").queue();
 				break;
 				case 2 : event.getChannel().sendMessage("Tu veux voir ma bite ?").queue();
+				break;
+				case 3 : event.getChannel().sendMessage("Non, ne joue pas avec ma queue !").queue();
 				break;
 			}
 			
